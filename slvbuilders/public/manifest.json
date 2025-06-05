@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SLV Builders",
+  "name": "SLV Builders & Developers",
+  "description": "SLV Builders & Developers - Your trusted partner in construction and real estate.",
   "icons": [
     {
       "src": "favicon.ico",
