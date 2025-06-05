@@ -1,0 +1,46 @@
+import React from "react"
+import slv_logo from "../slv_logo.jpg"
+
+import { Link } from "react-router-dom"
+
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="container">
+                <nav className="navbar navbar-expand-lg navbar-light">
+                    <div className="container-fluid">
+                        <Link className="navbar-brand" to="/">
+                            <div className="d-flex align-items-center">
+                                <img src={slv_logo} alt="SLV Builders Logo" width="100px" className="logo" />
+                            </div>
+                        </Link>
+
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarNav">
+                            <ul className="navbar-nav ms-auto">
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/">Home</Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/about">About</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/properties">Properties</Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/contact">Contact</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    )
+}
+
+export default Header;
