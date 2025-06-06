@@ -11,7 +11,7 @@ export default class BestFlatList extends Component {
 
     render() {
         const title = {
-text: "SLV Builders & Developers – YMR 5▼ Township",
+            text: "SLV Builders & Developers – YMR 5▼ Township",
             description: "New Venture in YMR 5 Township, Kurnool",
         };
 
