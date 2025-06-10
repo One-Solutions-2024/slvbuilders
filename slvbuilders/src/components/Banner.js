@@ -6,7 +6,7 @@ const Banner = () => {
     const [find, setFind] = useState([]);
     const [word, setWord] = useState("");
     useEffect(() => {
-        setSearch(["a","b","test", "mb"])
+        setSearch(["a", "b", "test", "mb"])
     }, [])
     const findSearch = (e) => {
         setWord(e.target.value)
@@ -35,14 +35,8 @@ const Banner = () => {
                         <div className="col-lg-6 mx-auto">
                             <div className="banner-area text-center pt-4 pb-4">
                                 <p>Let's <strong>Build</strong> your <strong>Dream</strong> Together!</p>
-                                                            <h2>Open Plots for Sale for the <strong className="bg-warning rounded-3">KUDA</strong> Approve</h2>
-
+                                <h2>Open Plots for Sale for the <strong className="bg-warning rounded-3">KUDA</strong> Approve</h2>
                                 <h1 className="mt-2 mb-4"><strong> SLV Builders & Developers</strong></h1>
-                                <div className="search-area">
-                                    <input value={word} onChange={(e) => findSearch(e)} type="text" className="inp-search" placeholder="Search" />
-                                    <button className="btn-search m-2">Search All</button>
-                                </div>
-                                {findResult()}
                             </div>
                         </div>
                     </div>
